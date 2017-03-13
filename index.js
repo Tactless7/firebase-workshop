@@ -22,7 +22,6 @@
 
 function addToDB(data){
   firebase.database().ref('/items').push().set({
-    id : 4000,
     createdAt : Date.now(),
     content : data,
     status : "fait"
